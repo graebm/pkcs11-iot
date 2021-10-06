@@ -22,7 +22,7 @@
 #define TIMEOUT_MS (TIMEOUT_SEC * 1000)
 #define TIMEOUT_NS (TIMEOUT_SEC * 1000000000ULL)
 
-#define FAIL(MSG) do {printf(MSG); exit(-1);} while(0);
+#define FAIL(MSG) do {printf("%s\n", MSG); exit(-1);} while(0);
 
 #define ASSERT_SUCCESS(EXPR) \
     do { \
@@ -235,6 +235,6 @@ int main(int argc, char **argv) {
 
     aws_io_library_clean_up();
 
-    printf("SAMPLE SUCCESS!\n");
+    printf("SAMPLE DONE\n");
     return 0;
 }
