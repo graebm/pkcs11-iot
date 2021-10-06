@@ -1,0 +1,6 @@
+project(pkcs11-iot C)
+cmake_minimum_required(VERSION 3.13)
+add_executable(${PROJECT_NAME} main.c)
+target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wno-long-long -pedantic -Werror)
+find_package(aws-c-io REQUIRED)
+target_link_libraries(${PROJECT_NAME} PRIVATE AWS::aws-c-io)
