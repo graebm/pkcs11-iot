@@ -5,7 +5,7 @@ A C sample program for establishing TLS connections, with a PKCS#11 library hand
 
 ## Install dependencies
 ```sh
-INSTALL_PATH=<install-path>
+export INSTALL_PATH=<install-path>
 
 git clone https://github.com/awslabs/aws-lc.git
 cmake -S aws-lc -B aws-lc/build -DCMAKE_INSTALL_PREFIX=$INSTALL_PATH
